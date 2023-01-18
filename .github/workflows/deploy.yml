@@ -27,9 +27,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: set env
-        run: export PUBLIC_PATH="/mirror/vant/"
-
       - name: Build Site
         run: npm run build:site
 
