@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: 
-      PUBLIC_PATH: /mirror/vant/
+      PUBLIC_PATH: "/mirror/vant/"
     steps:
       - name: checkout
         uses: actions/checkout@v3
