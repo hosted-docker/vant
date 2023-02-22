@@ -83,8 +83,8 @@ export default {
 
 <style lang="less">
 .van-doc-card {
-  margin-bottom: 24px;
-  padding: 24px;
+  margin-bottom: var(--van-doc-padding);
+  padding: 28px 28px 32px;
   background-color: var(--van-doc-background-2);
   border-radius: var(--van-doc-border-radius);
   overflow: auto;
@@ -185,7 +185,7 @@ export default {
   }
 
   > p {
-    margin-top: 8px;
+    margin-top: 16px;
     color: var(--van-doc-text-color-3);
     font-size: 15px;
     line-height: 26px;
@@ -245,7 +245,7 @@ export default {
       display: inline-block;
       color: var(--van-doc-green);
       font-size: 14px;
-      font-family: 'Source Code Pro', 'Monaco', 'Inconsolata', monospace;
+      font-family: var(--van-doc-code-font-family);
       font-style: normal;
       max-width: 300px;
       -webkit-font-smoothing: auto;
@@ -253,7 +253,7 @@ export default {
   }
 
   > ul {
-    margin: 12px 0;
+    margin: 16px 0 0;
   }
 
   > ul li,
@@ -291,13 +291,12 @@ export default {
   > table code {
     display: inline;
     margin: 0 2px;
-    padding: 2px 5px;
+    padding: 3px 7px;
     font-size: 14px;
-    font-family: inherit;
-    font-weight: 600;
     word-break: keep-all;
-    border-radius: 4px;
-    -webkit-font-smoothing: antialiased;
+    border-radius: 6px;
+    -webkit-font-smoothing: auto;
+    font-family: var(--van-doc-code-font-family);
   }
 
   > blockquote {
@@ -313,7 +312,7 @@ export default {
   > img,
   > p img {
     width: 100%;
-    margin: 16px 0;
+    margin: 16px 0 0;
     border-radius: var(--van-doc-border-radius);
   }
 }
@@ -324,7 +323,7 @@ export default {
   padding: 0 0 75px;
 
   .van-doc-markdown-body {
-    padding: 24px;
+    padding: var(--van-doc-padding);
     overflow: hidden;
 
     h1,
@@ -344,7 +343,7 @@ export default {
     }
 
     h2 {
-      margin: 45px 0 20px;
+      margin: 52px 0 20px;
       font-size: 26px;
     }
   }

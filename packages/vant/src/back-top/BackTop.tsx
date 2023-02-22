@@ -13,10 +13,12 @@ import {
 
 // Utils
 import {
+  extend,
   addUnit,
   inBrowser,
   numericProp,
   getScrollTop,
+  getZIndexStyle,
   createNamespace,
   makeNumericProp,
 } from '../utils';
@@ -33,8 +35,10 @@ const [name, bem] = createNamespace('back-top');
 export const backTopProps = {
   right: numericProp,
   bottom: numericProp,
+  zIndex: numericProp,
   target: [String, Object] as PropType<TeleportProps['to']>,
   offset: makeNumericProp(200),
+  immediate: Boolean,
   teleport: {
     type: [String, Object] as PropType<TeleportProps['to']>,
     default: 'body',
@@ -57,16 +61,18 @@ export default defineComponent({
     const root = ref<HTMLElement>();
     const scrollParent = ref<Window | Element>();
 
-    const style = computed(() => ({
-      right: addUnit(props.right),
-      bottom: addUnit(props.bottom),
-    }));
+    const style = computed(() =>
+      extend(getZIndexStyle(props.zIndex), {
+        right: addUnit(props.right),
+        bottom: addUnit(props.bottom),
+      })
+    );
 
     const onClick = (event: MouseEvent) => {
       emit('click', event);
       scrollParent.value?.scrollTo({
         top: 0,
-        behavior: 'smooth',
+        behavior: props.immediate ? 'auto' : 'smooth',
       });
     };
 

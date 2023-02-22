@@ -19,6 +19,55 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 ## 更新内容
 
+### [v4.0.11](https://github.com/vant-ui/vant/compare/v4.0.10...v4.0.11)
+
+`2023-02-20`
+
+**Feature**
+
+- 新增 [vant-nuxt](https://github.com/vant-ui/vant-nuxt) 包，作为官方的 Nuxt Module [#11588](https://github.com/vant-ui/vant/issues/11588)
+- BackTop: 新增 z-index 属性以及相关 CSS 变量 [#11582](https://github.com/vant-ui/vant/issues/11582)
+- Picker: 支持在 option 插槽中获取选项的 index [#11594](https://github.com/vant-ui/vant/issues/11594)
+- @vant/use: 支持注销 useEventListener [#11540](https://github.com/vant-ui/vant/issues/11540)
+
+**Bug Fixes**
+
+- PickerGroup: 修复 confirm 事件参数不正确的问题 [#11566](https://github.com/vant-ui/vant/issues/11566)
+- PickerGroup: 修复 Tab 的下划线样式错误问题 [#11547](https://github.com/vant-ui/vant/issues/11547)
+- PickerGroup: 修复部分插槽不可用的问题 [#11564](https://github.com/vant-ui/vant/issues/11564)
+- Popover: 修复 placement 为 `*-start/end` 时箭头位置错误的问题 [#11584](https://github.com/vant-ui/vant/issues/11584)
+- Popover: 修复动画会导致组件位置错误的问题 [#11568](https://github.com/vant-ui/vant/issues/11568)
+- Space: 修复 SSR 时出现缺少 Text 报错的问题 [#11549](https://github.com/vant-ui/vant/issues/11549)
+
+### [v4.0.10](https://github.com/vant-ui/vant/compare/v4.0.9...v4.0.10)
+
+`2023-02-02`
+
+**Bug Fixes**
+
+- DatePicker: 修复 change 事件中日期参数不正确的问题 [#11529](https://github.com/vant-ui/vant/issues/11529)
+- Slider: 修复双滑块模式下无法正确拖动的问题 [#11526](https://github.com/vant-ui/vant/issues/11526) [#11534](https://github.com/vant-ui/vant/issues/11534)
+
+### [v4.0.9](https://github.com/vant-ui/vant/compare/v4.0.8...v4.0.9)
+
+`2023-01-26`
+
+**Feature**
+
+- BackTop: 新增 immediate 属性 [#11515](https://github.com/vant-ui/vant/issues/11515)
+- Calendar: 新增 month-title 插槽 [#11500](https://github.com/vant-ui/vant/issues/11500)
+- Cascader: 新增 useCascaderAreaData 方法 [#11518](https://github.com/vant-ui/vant/issues/11518)
+- ImagePreview: 支持在缩放图片后滑动至其他图片 [#11505](https://github.com/vant-ui/vant/issues/11505)
+- Locale: 新增 Esperanto 世界语 [#11520](https://github.com/vant-ui/vant/issues/11520)
+- Locale: 新增 useCurrentLang 方法 [#11517](https://github.com/vant-ui/vant/issues/11517)
+- Swipe: 新增 drag-start, drag-end 事件 [#11502](https://github.com/vant-ui/vant/issues/11502)
+
+**Bug Fixes**
+
+- ImagePreview: 修复切换图片过程中可以触发图片缩放的问题 [#11504](https://github.com/vant-ui/vant/issues/11504)
+- Locale: 修复意大利语翻译问题 [#11519](https://github.com/vant-ui/vant/issues/11519)
+- Swipe: 修复多指操作时滑动位置被错误重置的问题 [#11503](https://github.com/vant-ui/vant/issues/11503)
+
 ### [v4.0.8](https://github.com/vant-ui/vant/compare/v4.0.7...v4.0.8)
 
 `2023-01-15`

@@ -2,13 +2,13 @@
   <div class="van-doc-intro">
     <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://fastly.jsdelivr.net/npm/@vant/assets/logo.png">
     <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Vant</h2>
-    <p>轻量、可靠的移动端 Vue 组件库</p>
+    <p>轻量、可定制的移动端 Vue 组件库</p>
   </div>
 </div>
 
 ### 介绍
 
-Vant 是一个**轻量、可靠的移动端组件库**，于 2017 年开源。
+Vant 是一个**轻量、可定制的移动端组件库**，于 2017 年开源。
 
 目前 Vant 官方提供了 [Vue 2 版本](https://vant-contrib.gitee.io/vant/v2)、[Vue 3 版本](https://vant-contrib.gitee.io/vant)和[微信小程序版本](http://vant-contrib.gitee.io/vant-weapp)，并由社区团队维护 [React 版本](https://github.com/3lang3/react-vant)和[支付宝小程序版本](https://github.com/ant-move/Vant-Aliapp)。
 
@@ -22,13 +22,13 @@ Vant 是一个**轻量、可靠的移动端组件库**，于 2017 年开源。
 - 📖 提供丰富的中英文文档和组件示例
 - 📖 提供 Sketch 和 Axure 设计资源
 - 🍭 支持 Vue 2、Vue 3 和微信小程序
+- 🍭 支持 Nuxt 2、Nuxt 3，提供 Nuxt 的 [Vant Module](https://github.com/vant-ui/vant-nuxt)
 - 🍭 支持主题定制，内置 700+ 个主题变量
 - 🍭 支持按需引入和 Tree Shaking
 - 🍭 支持无障碍访问（持续改进中）
 - 🍭 支持深色模式
-- 🍭 支持 Nuxt 3
 - 🍭 支持服务器端渲染
-- 🌍 支持国际化，内置 20+ 种语言包
+- 🌍 支持国际化，内置 30+ 种语言包
 
 ### 版本提示
 
@@ -68,6 +68,7 @@ Vant 3/4 支持现代浏览器以及 Chrome >= 51、iOS >= 10.0（与 Vue 3 一�
 | [vant-cli](https://github.com/vant-ui/vant/tree/main/packages/vant-cli) | 开箱即用的组件库搭建工具 |
 | [vant-icons](https://github.com/vant-ui/vant/tree/main/packages/vant-icons) | Vant 图标库 |
 | [vant-touch-emulator](https://github.com/vant-ui/vant/tree/main/packages/vant-touch-emulator) | 在桌面端使用 Vant 的辅助库 |
+| [vant-nuxt](https://github.com/vant-ui/vant-nuxt) | 为 Nuxt 准备的模块 |
 
 ### 社区生态
 
@@ -115,4 +116,4 @@ Vant 3/4 支持现代浏览器以及 Chrome >= 51、iOS >= 10.0（与 Vue 3 一�
 
 ### 开源协议
 
-本项目基于 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89) 协议，请自由地享受和参与开源
+本项目基于 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89) 协议，请自由地享受和参与开源。

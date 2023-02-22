@@ -19,6 +19,55 @@ Vant follows [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/).
 
 ## Details
 
+### [v4.0.11](https://github.com/vant-ui/vant/compare/v4.0.10...v4.0.11)
+
+`2023-02-20`
+
+**Feature**
+
+- Add new [vant-nuxt](https://github.com/vant-ui/vant-nuxt) module for Nuxt [#11588](https://github.com/vant-ui/vant/issues/11588)
+- BackTop: support css variable and prop of z-index [#11582](https://github.com/vant-ui/vant/issues/11582)
+- Picker: expose option index to option slot [#11594](https://github.com/vant-ui/vant/issues/11594)
+- @vant/use: support cleanup useEventListener [#11540](https://github.com/vant-ui/vant/issues/11540)
+
+**Bug Fixes**
+
+- PickerGroup: confirm event missing params [#11566](https://github.com/vant-ui/vant/issues/11566)
+- PickerGroup: fix style of tab-line caused by v-show [#11547](https://github.com/vant-ui/vant/issues/11547)
+- PickerGroup: fix slots not work [#11564](https://github.com/vant-ui/vant/issues/11564)
+- Popover: fix the arrow position of `*-start/end` placements [#11584](https://github.com/vant-ui/vant/issues/11584)
+- Popover: should update location after transition [#11568](https://github.com/vant-ui/vant/issues/11568)
+- Space: Text is not defined in SSR [#11549](https://github.com/vant-ui/vant/issues/11549)
+
+### [v4.0.10](https://github.com/vant-ui/vant/compare/v4.0.9...v4.0.10)
+
+`2023-02-02`
+
+**Bug Fixes**
+
+- DatePicker: fix the value is not updated in time of change event [#11529](https://github.com/vant-ui/vant/issues/11529)
+- Slider: fix button does not work properly in two-thumb mode [#11526](https://github.com/vant-ui/vant/issues/11526) [#11534](https://github.com/vant-ui/vant/issues/11534)
+
+### [v4.0.9](https://github.com/vant-ui/vant/compare/v4.0.8...v4.0.9)
+
+`2023-01-26`
+
+**Feature**
+
+- BackTop: add immediate prop [#11515](https://github.com/vant-ui/vant/issues/11515)
+- Calendar: add month-title slot [#11500](https://github.com/vant-ui/vant/issues/11500)
+- Cascader: add useCascaderAreaData method [#11518](https://github.com/vant-ui/vant/issues/11518)
+- ImagePreview: allow swipe when image is moved to edge [#11505](https://github.com/vant-ui/vant/issues/11505)
+- Locale: add Esperanto translations [#11520](https://github.com/vant-ui/vant/issues/11520)
+- Locale: add useCurrentLang method [#11517](https://github.com/vant-ui/vant/issues/11517)
+- Swipe: add drag-start, drag-end event [#11502](https://github.com/vant-ui/vant/issues/11502)
+
+**Bug Fixes**
+
+- ImagePreview: disable zoom when swiping [#11504](https://github.com/vant-ui/vant/issues/11504)
+- Locale: fix Italian general revision [#11519](https://github.com/vant-ui/vant/issues/11519)
+- Swipe: avoid resetting position on multi-finger touch [#11503](https://github.com/vant-ui/vant/issues/11503)
+
 ### [v4.0.8](https://github.com/vant-ui/vant/compare/v4.0.7...v4.0.8)
 
 `2023-01-15`
